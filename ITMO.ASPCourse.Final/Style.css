@@ -1,0 +1,27 @@
+﻿body {
+
+}
+
+h1 {
+    margin: 2px;
+    padding: 2px 0;
+    font-size: 5px;
+    font-weight: bold;
+}
+
+#form1 label {
+    width: 170px;
+    display: inline-block;
+}
+
+#form1 input {
+    margin: 2px;
+    margin-left: 0px;
+    width: 170px;
+}
+
+
+button[type=submit] {
+    margin-top: 15px;
+    padding: 5px;
+}

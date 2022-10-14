@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title> 
+    <link rel="stylesheet" type="text/css" href="Styles.css" />
+   
+    <style type="text/css">
+        .auto-style1 {
+            height: 27px;
+        }
+        .auto-style2 {
+            height: 40px;
+        }
+        .auto-style3 {
+            height: 37px;
+        }
+    </style>
+   
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style3">Student List </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    <a href="RegForm.aspx">Add New</a>&nbsp;&nbsp; 
+                    <a href="StudentTable.aspx">View Table</a>&nbsp;&nbsp; 
+                    <a href="SummTable.aspx">Result Summary</a>&nbsp;&nbsp;
+                    <a href="Top.aspx">Top 5</a>&nbsp;&nbsp;
+                    <a href="Worst.aspx">Worst 5</a>
+                </td>
+            </tr>
+        </table>
+        
+    </div>
+    </form>
+</body>
+</html>
